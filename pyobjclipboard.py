@@ -16,6 +16,9 @@ def copy_object(obj):
 def paste_object():
     '''
     Paste an object copied to the clipboard with `copy_object`.
+
+    Returns:
+        A Python object previously copied to the clipboard
     '''
     payload = pyperclip.paste()
     if payload[0] != 'b':

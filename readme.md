@@ -7,6 +7,8 @@ It pickles an object and converts the pickled byte data to hexidecimals, then co
 ### Why?
 Sometimes you (or at least I) want to be able to transfer Python objects between interpreter sessions. Writing the object to a file in one session and unpickling it in the other session isn't the most convenient thing.
 
+**Warnings:** Copy-pasting data [introduces more opportunity for human error](http://www.businessinsider.com/excel-partly-to-blame-for-trading-loss-2013-2), and you probably should reconsider. This module hasn't been tested much, and might be broken in a way I don't realize. Also, it uses the same clipboard as everything else, so if you copy some data and then cut/copy some text, your data is gone. Basically, be careful. 
+
 ### Requirements
 
 Tested on Python 3.4, on a Mac. YMMV.
